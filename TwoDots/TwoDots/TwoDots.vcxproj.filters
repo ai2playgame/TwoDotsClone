@@ -97,10 +97,25 @@
     <Filter Include="Resource Files\example\zip">
       <UniqueIdentifier>{81d8d80c-f0ce-492f-8fee-c5502c31bc0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\dot">
+      <UniqueIdentifier>{36c570b6-a4d0-4782-8c99-894155efa2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dot">
+      <UniqueIdentifier>{27ba7d9c-758d-407d-a687-91a259a20bec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dot\Dot.cpp">
+      <Filter>Source Files\dot</Filter>
+    </ClCompile>
+    <ClCompile Include="dot\DotsContainer.cpp">
+      <Filter>Source Files\dot</Filter>
+    </ClCompile>
+    <ClCompile Include="dot\LineSegment.cpp">
+      <Filter>Source Files\dot</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -374,5 +389,19 @@
     <Xml Include="App\example\config\config.xml">
       <Filter>Resource Files\example\config</Filter>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dot\Dot.hpp">
+      <Filter>Header Files\dot</Filter>
+    </ClInclude>
+    <ClInclude Include="dot\DotsContainer.hpp">
+      <Filter>Header Files\dot</Filter>
+    </ClInclude>
+    <ClInclude Include="dot\LineSegment.hpp">
+      <Filter>Header Files\dot</Filter>
+    </ClInclude>
+    <ClInclude Include="dot\DotsController.hpp">
+      <Filter>Header Files\dot</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

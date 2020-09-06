@@ -108,6 +108,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dot\Dot.cpp" />
+    <ClCompile Include="dot\DotsContainer.cpp" />
+    <ClCompile Include="dot\LineSegment.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -233,6 +236,12 @@
     <None Include="App\example\shader\2d\swirl.hlsl">
       <FileType>Document</FileType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dot\Dot.hpp" />
+    <ClInclude Include="dot\DotsContainer.hpp" />
+    <ClInclude Include="dot\DotsController.hpp" />
+    <ClInclude Include="dot\LineSegment.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
