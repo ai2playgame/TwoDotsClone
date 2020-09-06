@@ -6,6 +6,8 @@ dot::Dot::Dot(Color color, Vec2 initPos, float radius)
 	, m_posTo(initPos)
 	, m_vel()
 	, m_radius(radius)
+	, m_selected(false)
+	, m_eraseFlag(false)
 {
 }
 
@@ -22,7 +24,21 @@ void dot::Dot::update()
 
 void dot::Dot::draw() const
 {
-	Circle(m_pos, m_radius).draw(m_color);
+	Circle circle(m_pos, m_radius);
+	if (circle.mouseOver()) {
+		circle.drawFrame(4.0, Palette::Red);
+	}
+	circle.draw(m_color);
+}
+
+void dot::Dot::select()
+{
+	m_selected = true;
+}
+
+void dot::Dot::unselect()
+{
+	m_selected = false;
 }
 
 bool dot::Dot::mouseOver() const
@@ -31,12 +47,17 @@ bool dot::Dot::mouseOver() const
 	return circle.mouseOver();
 }
 
-bool dot::Dot::selected() const
+bool dot::Dot::isSelected() const
 {
-	return false;
+	return m_selected;
 }
 
 Color dot::Dot::getColor() const
 {
 	return m_color;
+}
+
+Vec2 dot::Dot::getCenterPos() const
+{
+	return m_pos;
 }

@@ -400,8 +400,5 @@
     <ClInclude Include="dot\LineSegment.hpp">
       <Filter>Header Files\dot</Filter>
     </ClInclude>
-    <ClInclude Include="dot\DotsController.hpp">
-      <Filter>Header Files\dot</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

@@ -240,7 +240,6 @@
   <ItemGroup>
     <ClInclude Include="dot\Dot.hpp" />
     <ClInclude Include="dot\DotsContainer.hpp" />
-    <ClInclude Include="dot\DotsController.hpp" />
     <ClInclude Include="dot\LineSegment.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
